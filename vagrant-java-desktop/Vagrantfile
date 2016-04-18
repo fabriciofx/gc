@@ -1,0 +1,35 @@
+# Arquivo de configuração de um VM Vagrant com suporta a Java 8
+# Documentação: https://www.vagrantup.com/docs/
+# Vagrant boxes: https://atlas.hashicorp.com/boxes/search
+Vagrant.configure(2) do |config|
+  # Imagem de base para a VM
+  config.vm.box = "ubuntu/trusty64"
+  
+  # Configura o hostname da VM
+  config.vm.hostname = "ubuntu"
+  
+  # Configurações da VM
+  config.vm.provider "virtualbox" do |v|
+    # Configura um nome para a VM
+    v.name = "vagrant-desktop-java8"
+    
+    # Mostre a GUI do VirtualBox quando executar o boot na VM
+    v.gui = true
+    
+    # Configure a quantidade de memória RAM da VM para 2GiB
+    v.customize ["modifyvm", :id, "--memory", 2048]
+    
+    # Configure a quantidade de memória de vídeo da VM para 64MiB
+    v.customize ["modifyvm", :id, "--vram", 64]
+    
+    v.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
+    v.customize ["modifyvm", :id, "--accelerate3d", "on"]
+    v.customize ["modifyvm", :id, "--accelerate2dvideo", "on"]
+    v.customize ["setextradata", "global", "GUI/SuppressMessages", "all"]
+  end
+  # Redireciona a porta 8080 do Host para a 8080 do Guest
+  #config.vm.network :forwarded_port, guest: 8080, host: 8080
+  
+  # Executa o arquivo bootstrap.sh para o provisionamento da VM
+  config.vm.provision :shell, path: "bootstrap.sh"
+end
