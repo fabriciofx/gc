@@ -9,7 +9,7 @@ Desenvolver software é uma atividade complexa, colaborativa e de extrema
 precisão. Devido a estas características, é preciso conhecer métodos, técnicas e
 ferramentas que ajudarão no desenvolvimento e evolução da aplicação.
 
-## Pré Requisitos
+## Requisitos
 1. Conta no GitHub
   - Todos devem possuir uma conta no [GitHub](http://github.com)
 2. Conhecimentos acerca das linguagens web
