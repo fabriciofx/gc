@@ -66,14 +66,14 @@ ferramentas que ajudarão no desenvolvimento e evolução da aplicação.
   - Localização e configuração de programas e serviços
     - Arquivos localizados no diretório /etc
 4. Sistema Operacional Windows
-- Gerenciamento de arquivos e diretórios (Windows Explorer)
-- Gerenciamento de processos (Gerenciador de Tarefas)
-- Agrupamento e compactação/descompactação de arquivos
-- Editor de textos
-  - Atom
-  - Notepad++
-- Gerenciamento de usuários e grupos
-- Execução de comandos como usuário administrador
-- Download de conteúdo pela rede
-- Instalação de programas
-- Inicialização e parada de serviços
+  - Gerenciamento de arquivos e diretórios (Windows Explorer)
+  - Gerenciamento de processos (Gerenciador de Tarefas)
+  - Agrupamento e compactação/descompactação de arquivos
+  - Editor de textos
+    - Atom
+    - Notepad++
+  - Gerenciamento de usuários e grupos
+  - Execução de comandos como usuário administrador
+  - Download de conteúdo pela rede
+  - Instalação de programas
+  - Inicialização e parada de serviços
